@@ -12,9 +12,24 @@ export interface compilerSliceStateType {
 
 const initialState: compilerSliceStateType = {
   fullCode: {
-    html: "this is a html code",
-    css: "this is a css code",
-    javascript: "this is a js code",
+    html: `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Site Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>`,
+    css: "",
+    javascript: "",
   },
   currentLanguage: "html",
   currentCode: "",
